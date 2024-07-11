@@ -1,0 +1,209 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background: linear-gradient(to bottom, #8cd9fa, #ffffff);
+    color: #000;
+    /* Change text color to black or another suitable color */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+}
+
+.text.container {
+    background-color: #f5bc42;
+    border: 2px solid #000000;
+    margin-top: 20px;
+}
+
+.text.container text {
+    margin: 10px 120px;
+    font-weight: bold;
+}
+
+.movie-container {
+    margin: 10px 0;
+    font-size:20px;
+}
+
+.movie-container select {
+    background-color: #fff;
+    font-family: 'Lato',
+        sans-serif;
+    border-radius: 5px;
+    font-size: 18px;
+    outline: none;
+    margin-left: 10px;
+    padding: 5px 15px 5px 15px;
+    /* -webkit-appearance: none;
+    -moz-appearance: none;  
+    appearance: none; */
+    /* Will remove the browser style and let you use your own style */
+}
+
+.pagecontainer {
+    /*  it simply enables a 3D-space for children elements. */
+    perspective: 1000px;
+    -webkit-perspective: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-container {
+    margin-top: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    /*Center items horizontally within the row */
+    align-items: center;
+    /* Center items vertically within the row */
+    margin: 15px 0;
+}
+
+.row b {
+    margin-right: 20px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    /* Center items vertically within the container */
+    margin-right: 20px;
+    /* Add some spacing between checkboxes */
+    font-size: 22px;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+    display: none;
+    /* Hide the checkbox */
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    height: 30px;
+    width: 35px;
+    background: #ffffff;
+    border: 2px solid #314c81;
+    /* height: 25px;
+    width: 25px;
+    background-color: #eee; */
+    display: flex;
+    justify-content: center;
+    /* Center the checkmark horizontally */
+    align-items: center;
+    /* Center the checkmark vertically */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.container:nth-child(3),
+.container:nth-last-child(3) {
+    margin-right: 40px;
+    /* Add spacing between checkboxes */
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked~.checkmark {
+    background-color: #2196F3;
+}
+
+/* Define custom styles for the checkbox when it is disabled (occupied) */
+.container input:disabled~.checkmark {
+    background-color: red;
+    cursor: not-allowed;
+}
+
+body input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: auto;
+    font-weight: bold;
+    font-size: medium;
+    /* margin-top: 30px; */
+}
+
+.text-wrapper {
+    margin-top: 30px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-wrapper p{
+    align-items: flex-start;
+}
+
+.text-wrapper input{
+    margin-left: 100px;
+align-items: flex-end;
+}
+
+.showcase .seat:not(.occupied):hover {
+    cursor: default;
+    transform: scale(1);
+}
+
+.showcase {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #777;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.showcase li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.showcase li small {
+    margin-left: 2px;
+}
+
+.seat {
+    /* background-color: #444451; */
+    /* height: 12px;
+    width: 15px; */
+    margin: 5px;
+    /* border-top-left-radius: 10px;
+    border-top-right-radius: 10px; */
+    height: 30px;
+    width: 35px;
+    background: #ffffff;
+    border: 2px solid #314c81;
+}
+
+.seat.selected {
+    background-color: #2196F3;
+}
+
+.seat.occupied {
+    background-color: #e21111;
+}
+
+.seat:not(.occupied):hover {
+    /* Selecting seats that do not have "occupied" class */
+    cursor: pointer;
+    transform: scale(1.2);
+}

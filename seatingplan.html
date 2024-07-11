@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Movie Seating Plan</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <script type="text/javascript" src="detectpricechange.js"></script>  -->
+    <link rel="stylesheet" href="seatingplan.css">
+</head>
+
+
+<body>
+
+    <div class="movie-container">
+        <label>Movie selected:</label>
+        <select id="movie">
+            <option value="13">Trolls Band Together ($13)</option>
+            <option value="15">Taylor Swift: The Eras Tour ($15)</option>
+            <option value="18">Marvels ($18)</option>
+            <!-- <option value="750">Dolittle (₹750)</option> -->
+        </select>
+    </div>
+
+    <div class="pagecontainer">
+        <div class="text container">
+            <text>Movie Screen</text>
+        </div>
+
+        <div class="row-container">
+            <div class="row">
+                <b>A </b>
+                <label class="container">
+                    <input type="checkbox" id="A1" class="seat" value="A1" disabled>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="checkbox" class="seat" value="A2" disabled>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="checkbox" class="seat" value="A3">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="checkbox" class="seat" value="A4">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="checkbox" class="seat" value="A5">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="checkbox" class="seat" value="A6">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="checkbox" class="seat" value="A7">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="checkbox" class="seat" value="A8">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <div class="row">
+                <b>B </b>
+                <label class="container">
+                    <input type="checkbox" id="B1" class="seat" value="B1">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="checkbox" class="seat" value="B2">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="checkbox" class="seat" value="B3">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="checkbox" class="seat" value="B4">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="checkbox" class="seat" value="B5">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="checkbox" class="seat" value="B6">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="checkbox" class="seat" value="B7">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="checkbox" class="seat" value="B8">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <div class="row">
+                <b>C</b>
+                <label class="container">
+                    <input type="checkbox" id="C1" class="seat" value="C1">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="checkbox" class="seat" value="C2">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="checkbox" class="seat" value="C3">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="checkbox" class="seat" value="C4">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="checkbox" class="seat" value="C5">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="checkbox" class="seat" value="C6">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="checkbox" class="seat" value="C7" disabled>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="checkbox" class="seat" value="C8" disabled>
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <div class="row">
+                <b>D </b>
+                <label class="container">
+                    <input type="checkbox" id="D1" class="seat" value="D1">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="checkbox" class="seat" value="D2">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="checkbox" class="seat" value="D3">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="checkbox" class="seat" value="D4">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="checkbox" class="seat" value="D5">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="checkbox" class="seat" value="D6">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="checkbox" class="seat" value="D7">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="checkbox" class="seat" value="D8">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <div class="row">
+                <b>E </b>
+                <label class="container">
+                    <input type="checkbox" id="E1" class="seat" value="E1">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="checkbox" class="seat" value="E2">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="checkbox" class="seat" value="E3">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="checkbox" class="seat" value="E4">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="checkbox" class="seat" value="E5">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="checkbox" class="seat" value="E6">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="checkbox" class="seat" value="E7">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="checkbox" class="seat" value="E8">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <div class="row">
+                <b>F </b>
+                <label class="container">
+                    <input type="checkbox" id="F1" class="seat" value="F1">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="checkbox" class="seat" value="F2">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="checkbox" class="seat" value="F3" disabled>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="checkbox" class="seat" value="F4" disabled>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="checkbox" class="seat" value="F5">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="checkbox" class="seat" value="F6">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="checkbox" class="seat" value="F7">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="checkbox" class="seat" value="F8">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <div class="row">
+                <b>G </b>
+                <label class="container">
+                    <input type="checkbox" id="G1" class="seat" value="G1">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="checkbox" class="seat" value="G2">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="checkbox" class="seat" value="G3">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="checkbox" class="seat" value="G4">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="checkbox" class="seat" value="G5">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="checkbox" class="seat" value="G6" disabled>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="checkbox" class="seat" value="G7">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="checkbox" class="seat" value="G8">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <ul class="showcase">
+                <li>
+                    <div class="seat"></div>
+                    <small>Not Occupied</small>
+                </li>
+                <li>
+                    <div class="seat selected"></div>
+                    <small>Selected</small>
+                </li>
+                <li>
+                    <div class="seat occupied"></div>
+                    <small>Occupied</small>
+                </li>
+            </ul>
+            <div class="text-wrapper">
+                <p class="text">Seats Selected:
+                    <span id='count'>0</span>
+                <!-- <p class="text">Total Price $<span id="total">0</span></p> -->
+                <input type="submit" value="Proceed to make payment" onsubmit="" onclick=""></input>
+            </div>
+        </div>
+    </div>
+    <script src="seatingplan.js"></script>
+
+   
+</body>

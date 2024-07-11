@@ -1,0 +1,120 @@
+body {
+    font-family: Verdana, Arial, sans-serif;
+    background-color:#8cd9fa;
+    margin:0; 
+    /* padding:0;  */
+}
+header
+{
+        text-align: center;
+    padding: 10px 10px 10px 10px;
+    background-color:#f8f4f4;
+}
+
+.register-box a{
+    background-color: #130909;
+    color: rgb(255, 255, 255);
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    margin-bottom:10px;
+    opacity: 0.8;
+    position: absolute;
+    right:8%;
+    border-radius:30px;
+    text-decoration: none;
+}
+
+.register-box {
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    /* Smooth edges */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+
+}
+
+.register-box input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.register-box input[type="reset"] {
+    cursor: pointer;
+    width: 30%;
+    margin-top:30px;
+    margin-right: 50px;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.register-box input[type="reset"]:hover {
+    background-color: #1315171d;
+}
+
+.register-box input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 30%;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.register-box input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.footer
+{
+    color: #ffffff;
+    text-align: center;
+    background-color: #2E1503;
+    margin-top:50px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+
+.notlogged-in{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    /* position: absolute;
+    width: 100%;
+  height: 100%; */
+}
+.notlogged-in p{
+ font-weight: bold;
+ font-size:20px;
+}
+.notlogged-in a{
+    background-color: #130909;
+    color: rgb(255, 255, 255);
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    margin-top:20px;
+    opacity: 0.8;
+    /* position: absolute; */
+    right:8%;
+    border-radius:30px;
+    text-decoration: none;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Seat Selection</title>
+    <link rel="stylesheet" href="cqstyle.css">
+</head>
+
+
+
+<body>
+    <div id="wrapper">
+        <header>
+            <img src="logo.png" width="700px" height="200px">
+        </header>
+
+        <table>
+            <tr>
+              <td><a href="aboutus.html"><b>About Us</b></a></td>
+              <td><a href="viewbookingdetails.html"><b>View Booking Details</b></a></td>
+              <td><b>Sign in/Register</b></td>
+            </tr>
+          </table>
+
+    <div id="movie">
+    <div id="MoviePoster">
+        <img id="posterImage" src="TitanicPoster.jpg" alt="Movie Poster" style="width: 500px; height: 400px;">
+    </div>
+
+
+    <div id="MovieDetails">
+        <div id="TitleDescription">
+        <h1>TITANIC</h1>
+        <p>
+        "Titanic" is a 1997 epic romance and disaster film directed by James Cameron. 
+        Starring Leonardo DiCaprio and Kate Winslet, the movie is set against the backdrop of the ill-fated RMS Titanic's maiden voyage in 1912.
+        It tells the story of a forbidden love affair between two passengers from different social classes.</p>
+        </div>
+        <br>
+        <div id="regionselect">
+        <label for="cinemaRegion"><b>Select Cinema Region:</b></label><br>
+        <select id="cinemaRegion" onchange="updateShowtimeOptions()">
+            <option value="cinema1">Cinema 1</option>
+            <option value="cinema2">Cinema 2</option>
+        </select>
+        </div>
+        <br>
+        <div id="showtimeselect">
+            <label for="showtime"><b>Select Showtime:</b></label><br>
+            <select id="showtime">
+            </select>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+    <script>
+        function updateShowtimeOptions() {
+            const cinemaRegion = document.getElementById('cinemaRegion');
+            const showtime = document.getElementById('showtime');
+            showtime.innerHTML = '';
+
+            if (cinemaRegion.value === 'cinema1') {
+
+                addShowtimeOption('Showtime 1 - 1:00 PM');
+                addShowtimeOption('Showtime 2 - 3:30 PM');
+                addShowtimeOption('Showtime 3 - 6:00 PM');
+            } else if (cinemaRegion.value === 'cinema2') {
+
+                addShowtimeOption('Showtime 1 - 2:30 PM');
+                addShowtimeOption('Showtime 2 - 5:00 PM');
+                addShowtimeOption('Showtime 3 - 7:30 PM');
+            }
+        }
+
+        function addShowtimeOption(optionText) {
+            const option = document.createElement('option');
+            option.text = optionText;
+            document.getElementById('showtime').add(option);
+        }
+
+
+        updateShowtimeOptions();
+    </script>
+</body>
+</html>

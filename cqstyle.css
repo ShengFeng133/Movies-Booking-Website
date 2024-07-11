@@ -1,0 +1,203 @@
+
+
+#wrapper { 
+    color: #060503;
+	margin: auto;
+    min-width: 1300px;
+} 
+
+
+header {  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
+
+#movie{
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+
+#MoviePoster {
+    float:left; 
+    width: 50%;
+    margin-top: 0px;
+}
+
+#TitleDescription h1 {
+    margin-top: 0;
+}
+
+#MovieDetails {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#MovieDetails #TitleDescription,
+#MovieDetails #regionselect,
+#MovieDetails #showtimeselect,
+#MovieDetails #showtimesubmit {
+    width: 100%; /* Make each section take up the full width */
+    /* Add some vertical space between sections */
+}
+
+#MovieDetails input[type="submit"] {
+    background-color: #474747;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 30%;
+    font-weight: bold;
+    font-size: medium;
+}
+
+#MovieDetails input[type="submit"]:hover {
+    background-color:#065eb5;
+}
+
+#seatingArea input[type="button"] {
+    background-color: #474747;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 30%;
+    font-weight: bold;
+    font-size: medium;
+}
+
+#TitleDescription h1{
+font-size: 250%;
+}
+#TitleDescription p{
+    font-size: 110%;
+}
+
+
+table{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: #070604;
+}
+
+td{
+    width: 34%;
+    height: 50px;
+    border: 3px solid #72693e;
+    text-align: center;
+    color: #000000;
+    font-size: 130%;
+}
+
+#content {
+    display: flex;
+    width: 100%;
+}
+
+
+
+
+.section {
+    flex: 1;
+    border: 1px solid #000; /* 为了可视化效果，添加边框 */
+    max-width: 33%;
+}
+
+#personaldetails input{
+    width: 350px;
+    border: 2px solid #151513; /* 设置边框宽度和颜色 */
+    border-radius: 10px; /* 圆润边框 */
+    padding: 5px; /* 增加内边距以改善外观 */
+}
+.custom-select{
+    width: 200px;
+    border: 2px solid #141413; /* 设置边框 */
+    border-radius: 10px; /* 圆润边框 */
+    padding: 4px; /* 增加内边距以改善外观 */
+    
+}
+
+.container {
+    width: 600px; /* 设置长方形方框的宽度 */
+    margin: 0 auto; /* 水平居中 */
+    margin-top: 100px;
+    padding-left: 60px; /* 增加内边距 */
+    padding-right: 60px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border: 2px solid #72693e; /* 添加边框 */
+}
+
+.input-container {
+    margin-bottom: 30px; /* 垂直间距 */
+}
+
+label {
+    display: block; /* 让标签独占一行 */
+}
+
+input {
+    width: 100%; /* 填充整个父容器宽度 */
+}
+
+
+#seatingArea input[type="button"] {
+    background-color: #474747;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 30%;
+    font-weight: bold;
+    font-size: medium;
+    margin-top:100px;
+}
+
+#seatingArea input[type="button"]:hover {
+    background-color:#065eb5
+}
+
+#paybutton{
+    background-color: #c72323;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: medium;
+}
+
+
+#paybutton:hover{
+    background-color:rgb(251, 115, 17);
+}
+
+#cinemaRegion{
+    width: 350px;
+    border: 2px solid #151513; /* 设置边框宽度和颜色 */
+    border-radius: 10px; /* 圆润边框 */
+    padding: 5px; /* 增加内边距以改善外观 */
+}
+
+#showtime{
+    width: 350px;
+    border: 2px solid #151513; /* 设置边框宽度和颜色 */
+    border-radius: 10px; /* 圆润边框 */
+    padding: 5px; /* 增加内边距以改善外观 */
+
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Movie Seating Plan</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <script type="text/javascript" src="detectpricechange.js"></script>  -->
+    <link rel="stylesheet" href="seatingplanincase.css">
+</head>
+
+<body>
+    <!-- <header>
+        <img src="easymoviesbooking.png" alt="header" height="100" width="500">
+    </header> -->
+
+    <!-- <div class="container">
+        <div class="movie-image">
+            <img src="trollsmovie.png" alt="Movie Image" width="200" height="250">
+        </div>
+        <div class="seating-plan">
+            <h2>Select Your Seat</h2>
+            <div id="seating-container">
+               
+            </div>
+            <button id="proceed-button" onclick="proceedToNextPage()">Proceed</button>
+        </div>
+    </div> -->
+    <!-- <div class="backtohome">
+    <a href="Home.html">❮  Back To Selection</a>
+
+        </div><br> -->
+
+    <div class="movie-container">
+        <label>Movie selected:</label>
+        <select id="movie">
+            <option value="13">Trolls Band Together ($13)</option>
+            <option value="15">Taylor Swift: The Eras Tour ($15)</option>
+            <option value="18">Marvels ($18)</option>
+            <!-- <option value="750">Dolittle (₹750)</option> -->
+        </select>
+    </div>
+
+    <div class="container">
+        <!-- <div class="movie-screen">
+            <img src='screen-thumb.png' alt='screen' />
+        </div> -->
+        <div class="text container">
+            <text>Movie Screen</text>
+        </div>
+
+        <div class="row-container">
+            <div class="row">
+                <b>A</b> 
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <b>B</b> 
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <b>C</b> 
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+            </div>
+            <div class="row">
+                <b>D</b> 
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <b id="E">E</b> 
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <!-- <h5 class='subtitle'>₹650</h5> -->
+            <div class="row">
+                <b id="F">F</b> 
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <b>G</b> 
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+            </div>
+            <!-- <h5 class='subtitle'>DIAMOND - ₹850</h5> -->
+
+            <ul class="showcase">
+                <li>
+                    <div class="seat"></div>
+                    <small>Not Occupied</small>
+                </li>
+                <li>
+                    <div class="seat selected"></div>
+                    <small>Selected</small>
+                </li>
+                <li>
+                    <div class="seat occupied"></div>
+                    <small>Occupied</small>
+                </li>
+            </ul>
+
+            <div class="text-wrapper">
+                <p class="text">Seats Selected:<span id='count'>0</span>
+                <p class="text">Total Price $<span id="total">0</span></p>
+            </div>
+        </div>
+    </div>
+
+    <input type="submit" value="Proceed to make payment" onsubmit="" onclick=""></input>
+
+    <div class="footer">
+        <footer>
+            ©2023 Easy Movie Booking Pte Ltd. All rights reserved. No part of this website may be reproduced in any
+            form
+            without our written permission.
+        </footer>
+    </div>
+
+    <script src="seatingplanincase.js"></script>
+
+
+
+</body>
